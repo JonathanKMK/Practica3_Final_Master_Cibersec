@@ -20,7 +20,7 @@ LabelEncoder: Se utiliza para codificar etiquetas de clase en valores numéricos
 directorio_train = "C:/Users/jonat/Desktop/CarneDataset/train"
 directorio_test = "C:/Users/jonat/Desktop/CarneDataset/test"
 
-# Con las libreras utilizadas se procede a realizar la lectura de las imagenes tanto de train y test
+# Con las libreras y modulos importados se procede a realizar la lectura de las imagenes tanto de train y test
 train_data = tf.keras.preprocessing.image_dataset_from_directory(
     variable_de_ruta_de_directorio,
     image_size = (300, 300),
