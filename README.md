@@ -62,7 +62,8 @@ Se realiza la compilacion del modelo propuesto, se aplica el optimizador adam pa
 # Se realiza el entrenamiento del modelo con 20 epocas
 entrenamiento = model.fit(
 train_data,
-epochs =20)
+epochs =20
+Durante las 20 epocas que se utiliza para el entrenamiento del modelo se observa que en cada interaccion se aumenta cada vez la excatitud para al final del modelo obtener una exactitud superior al 90%.
 
 # Se realiza el calculo de exactitud del modelo mediante una evaluacion entre el modelo entrenado y el conjunto de datos de prueba, en el que se obtiene 91% de exactitud
 loss, accuracy = model.evaluate(test_data)
