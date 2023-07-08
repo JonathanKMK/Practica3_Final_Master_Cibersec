@@ -28,7 +28,7 @@ train_data = tf.keras.preprocessing.image_dataset_from_directory(
     validation_split=0.2,
     subset="training",
     seed=100)
-En esta lectura y carga de imagenes se utilizan varios parametros para redimensionar las imagenes, definir el tamaño del lote de imagenes para el entrenamiento, proporción de datos que se utilizarán como conjunto de validación y la semilla para garantizar la reproducibilidad de los resultados.
+En esta lectura y carga de imagenes se utilizan varios parametros para redimensionar las imagenes a 300x300 pixles, batch_size para definir el tamaño del lote de imagenes para el entrenamiento, validation_split que es la proporción de datos que se utilizarán como conjunto de validación y la semilla para garantizar la reproducibilidad de los resultados.
 
 # Las imagenes ya estan clasificadas por clases y se hace la lectura y guardado de esas clases en una variable, se imprime la informacion de esas clases y se comprueba que se haya guardado de forma correcta
 clases = train_data.class_names
